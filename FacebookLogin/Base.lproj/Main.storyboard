@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Facebook LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FacebookLoginVC" id="BYZ-38-t0r" customClass="FacebookLoginVC" customModule="FacebookLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login via Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbM-ca-12C">
+                                <rect key="frame" x="115.5" y="70" width="144.5" height="32"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47450980390000003" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayV-8t-0Fs">
+                                <rect key="frame" x="98" y="132" width="180" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="8jJ-GC-uel"/>
+                                    <constraint firstAttribute="height" constant="40" id="Jxt-ga-8S7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                <state key="normal" title="Facebook Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bgS-1C-zVJ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Czr-g0-aac">
+                                <rect key="frame" x="24" y="191.5" width="327" height="111"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuE-L0-VW3">
+                                        <rect key="frame" x="125.5" y="0.0" width="76" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.47450980390000003" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJo-3c-NNd">
+                                        <rect key="frame" x="161.5" y="24" width="4" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.1058823529" green="0.21960784310000001" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMe-6Y-Jo2">
+                                        <rect key="frame" x="117.5" y="47" width="92" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.47450980390000003" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRd-kw-ZHD">
+                                        <rect key="frame" x="161.5" y="71" width="4" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.1058823529" green="0.21960784310000001" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMf-z2-izO">
+                                        <rect key="frame" x="161.5" y="94" width="4" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.1058823529" green="0.21960784310000001" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aV0-rJ-L6X">
+                                <rect key="frame" x="151" y="312.5" width="73" height="30"/>
+                                <state key="normal" title="Share Text"/>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJo-Hk-nxf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PV-gL-0RY">
+                                <rect key="frame" x="144.5" y="352.5" width="86" height="30"/>
+                                <state key="normal" title="Share Image"/>
+                                <connections>
+                                    <action selector="shareImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oek-cK-b8o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Czr-g0-aac" firstAttribute="centerX" secondItem="ayV-8t-0Fs" secondAttribute="centerX" id="9NZ-jW-lml"/>
+                            <constraint firstItem="ayV-8t-0Fs" firstAttribute="top" secondItem="CbM-ca-12C" secondAttribute="bottom" constant="30" id="A7O-h7-xRr"/>
+                            <constraint firstItem="CbM-ca-12C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="KEZ-ye-KyE"/>
+                            <constraint firstItem="aV0-rJ-L6X" firstAttribute="top" secondItem="Czr-g0-aac" secondAttribute="bottom" constant="10" id="Td1-or-EWD"/>
+                            <constraint firstItem="Czr-g0-aac" firstAttribute="top" secondItem="ayV-8t-0Fs" secondAttribute="bottom" constant="20" id="Vrz-X2-HIK"/>
+                            <constraint firstItem="6PV-gL-0RY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YNR-Jf-5A0"/>
+                            <constraint firstItem="Czr-g0-aac" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="g6w-sU-afn"/>
+                            <constraint firstItem="ayV-8t-0Fs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gvL-mw-QOX"/>
+                            <constraint firstItem="6PV-gL-0RY" firstAttribute="top" secondItem="aV0-rJ-L6X" secondAttribute="bottom" constant="10" id="k5p-LL-tOQ"/>
+                            <constraint firstItem="aV0-rJ-L6X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kRf-MM-2Cm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Czr-g0-aac" secondAttribute="trailing" constant="8" id="p4X-RD-7eX"/>
+                            <constraint firstItem="CbM-ca-12C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uzC-ZN-9o8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="cRd-kw-ZHD" id="J8u-BV-GBj"/>
+                        <outlet property="nameLabel" destination="VJo-3c-NNd" id="SG9-Xq-IGf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46" y="105"/>
+        </scene>
+    </scenes>
+</document>
